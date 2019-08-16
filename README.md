@@ -1,2 +1,2 @@
 # MS2start
-A attempt at remaking the late-Milestone 2 Start Screen
+This application attempts to recreate the Metro UI of Late-Milestone 2/Early-Milestone 3 builds of Windows 8.
