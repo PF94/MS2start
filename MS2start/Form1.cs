@@ -15,6 +15,7 @@ namespace MS2start
         public Form1()
         {
             InitializeComponent();
+            Explorer.Image = Icon.ExtractAssociatedIcon(@"C:\Windows\explorer.exe").ToBitmap();
         }
     }
 }
