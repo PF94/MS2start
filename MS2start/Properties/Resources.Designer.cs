@@ -63,16 +63,6 @@ namespace MS2start.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap windows_8_m3_wallpaper {
-            get {
-                object obj = ResourceManager.GetObject("windows-8-m3-wallpaper", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap windows_8_m3_wallpaper1 {
             get {
                 object obj = ResourceManager.GetObject("windows-8-m3-wallpaper1", resourceCulture);
