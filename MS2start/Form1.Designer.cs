@@ -42,9 +42,9 @@
             this.version.ForeColor = System.Drawing.Color.White;
             this.version.Location = new System.Drawing.Point(3, 9);
             this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(74, 13);
+            this.version.Size = new System.Drawing.Size(148, 13);
             this.version.TabIndex = 0;
-            this.version.Text = "MS2start Beta";
+            this.version.Text = "MS2start - Start Screen (Beta)";
             // 
             // controlPanel
             // 
