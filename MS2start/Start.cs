@@ -11,14 +11,14 @@ using TweakUtility.Helpers;
 //thanks to craftplacer for helping me
 namespace MS2start
 {
-    public partial class Form1 : Form
+    public partial class Start : Form
     {
         private readonly Image explorerIcon = Icon.ExtractAssociatedIcon(@"C:\Windows\explorer.exe").ToBitmap();
         private readonly Image myPCIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -109).ToBitmap();
         private readonly Image controlPanelIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -27).ToBitmap();
-        private readonly Image desktopIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -183).ToBitmap();
+        private readonly Image desktopIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -110).ToBitmap();
 
-        public Form1()
+        public Start()
         {
             InitializeComponent();
         }

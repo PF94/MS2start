@@ -1,6 +1,6 @@
 ﻿namespace MS2start
 {
-    partial class Form1
+    partial class Start
     {
         /// <summary>
         /// Required designer variable.
@@ -88,7 +88,7 @@
             this.Desktop.TabIndex = 5;
             this.Desktop.Paint += new System.Windows.Forms.PaintEventHandler(this.Desktop_Paint);
             // 
-            // Form1
+            // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,8 +102,10 @@
             this.Controls.Add(this.version);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Start";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MS2start";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
