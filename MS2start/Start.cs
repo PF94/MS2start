@@ -18,7 +18,15 @@ these early versions of the start screen do have animation (https://www.youtube.
 custom icons are placed to the right (https://cdn.discordapp.com/attachments/370327234482929665/610743033524125707/unknown.png)
 it seems that some icons are placed on different heights, depending on the resolution of the user. (https://cdn.discordapp.com/attachments/370327234482929665/610743033524125707/unknown.png)
 oddly enough, the icon boxes are colored, unlike 8.0, which is only 1 color. (https://cdn.discordapp.com/attachments/370327234482929665/610743033524125707/unknown.png)
-if you want to research how they look, get build 7955 from archive.org*/
+if you want to research how they look, get build 7955 from archive.org
+ */
+
+/*(RESOLUTION) = (WHERE THE ICONS ARE PLACED)
+ 1366 x 768 = 144 x 151
+ 
+ 1280 x 1024 = 144 x 207
+ */
+
 {
     public partial class Start : Form
     {
@@ -62,6 +70,12 @@ if you want to research how they look, get build 7955 from archive.org*/
             e.Graphics.DrawImage(desktopIcon, 15, 15); //Change position if you want.
             e.Graphics.DrawString("Desktop", Explorer.Font, new SolidBrush(controlPanel.ForeColor), new RectangleF(14, 84, 0, 0));
             //                                                                                                      X  Y  Width Height
+        }
+
+        private void ShowAbout(object sender, EventArgs e)
+        {
+            About AboutBox = new About();
+            AboutBox.Show();
         }
     }
 }

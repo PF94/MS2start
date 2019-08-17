@@ -86,13 +86,14 @@
             this.Desktop.Name = "Desktop";
             this.Desktop.Size = new System.Drawing.Size(426, 138);
             this.Desktop.TabIndex = 5;
+            this.Desktop.Click += new System.EventHandler(this.ShowAbout);
             this.Desktop.Paint += new System.Windows.Forms.PaintEventHandler(this.Desktop_Paint);
             // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MS2start.Properties.Resources.windows_8_m3_wallpaper1;
+            this.BackgroundImage = global::MS2start.Properties.Resources.WALLPAPER;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 599);
             this.Controls.Add(this.Desktop);
