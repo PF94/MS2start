@@ -68,39 +68,36 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="immersiveIE.cs">
+    <Compile Include="immersiveIE\immersiveIE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="immersiveIE.Designer.cs">
+    <Compile Include="immersiveIE\immersiveIE.Designer.cs">
       <DependentUpon>immersiveIE.cs</DependentUpon>
     </Compile>
-    <Compile Include="MShelp.cs">
+    <Compile Include="MShelp\MShelp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MShelp.Designer.cs">
+    <Compile Include="MShelp\MShelp.Designer.cs">
       <DependentUpon>MShelp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Start.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Start.Designer.cs">
-      <DependentUpon>Start.cs</DependentUpon>
     </Compile>
     <Compile Include="NativeHelpers.cs" />
     <Compile Include="NativeMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Start\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="immersiveIE.resx">
+    <EmbeddedResource Include="immersiveIE\immersiveIE.resx">
       <DependentUpon>immersiveIE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MShelp.resx">
+    <EmbeddedResource Include="MShelp\MShelp.resx">
       <DependentUpon>MShelp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Start.resx">
-      <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +109,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Start\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
