@@ -10,6 +10,15 @@ using System.Windows.Forms;
 using TweakUtility.Helpers;
 //thanks to craftplacer for helping me
 namespace MS2start
+
+
+/*something interesting...
+apparantly...
+these early versions of the start screen do have animation (https://www.youtube.com/watch?v=nnXtIMxbgCI)
+custom icons are placed to the right (https://cdn.discordapp.com/attachments/370327234482929665/610743033524125707/unknown.png)
+it seems that some icons are placed on different heights, depending on the resolution of the user. (https://cdn.discordapp.com/attachments/370327234482929665/610743033524125707/unknown.png)
+oddly enough, the icon boxes are colored, unlike 8.0, which is only 1 color. (https://cdn.discordapp.com/attachments/370327234482929665/610743033524125707/unknown.png)
+if you want to research how they look, get build 7955 from archive.org*/
 {
     public partial class Start : Form
     {
@@ -27,7 +36,7 @@ namespace MS2start
         {
             //                              X -\/  \/- Y
             e.Graphics.DrawImage(explorerIcon, 15, 15); //Change position if you want.
-            e.Graphics.DrawString("Windows Explorer", Explorer.Font, new SolidBrush(Explorer.ForeColor), new RectangleF(14, 84, 100, 0));
+            e.Graphics.DrawString("Windows Explorer", Explorer.Font, new SolidBrush(Explorer.ForeColor), new RectangleF(15, 84, 100, 0));
             //                                                                                                      X  Y  Width Height
         }
 
