@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MS2start")]
-[assembly: AssemblyDescription("A set of applications dedicated to remake the Early-Metro look of Builds 7927 and 7955")]
+[assembly: AssemblyTitle("MS2start - Start")]
+[assembly: AssemblyDescription("A set of applications dedicated to replicate the Early-Metro look of Builds 7927 and 7955")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("BetaLike")]
 [assembly: AssemblyProduct("MS2start")]
