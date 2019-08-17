@@ -1,6 +1,6 @@
-﻿namespace MS2start
+﻿namespace Start
 {
-    partial class immersiveIE
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // immersiveIE
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "immersiveIE";
-            this.Text = "immersive";
-            this.ResumeLayout(false);
-
+            this.Text = "Form1";
         }
 
         #endregion
     }
 }
+

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MS2start
+namespace immersiveIE
 {
-    public partial class immersiveIE : Form
+    public partial class Form1 : Form
     {
-        public immersiveIE()
+        public Form1()
         {
             InitializeComponent();
         }

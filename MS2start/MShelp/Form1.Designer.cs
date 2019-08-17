@@ -1,6 +1,6 @@
-﻿namespace MS2start
+﻿namespace MShelp
 {
-    partial class MShelp
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // MShelp
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "MShelp";
-            this.Text = "MShelp";
-            this.ResumeLayout(false);
-
+            this.Text = "Form1";
         }
 
         #endregion
     }
 }
+

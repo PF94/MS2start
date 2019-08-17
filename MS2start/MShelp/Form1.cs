@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MS2start
+namespace MShelp
 {
-    public partial class MShelp : Form
+    public partial class Form1 : Form
     {
-        public MShelp()
+        public Form1()
         {
             InitializeComponent();
         }
