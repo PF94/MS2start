@@ -34,7 +34,7 @@ if you want to research how they look, get build 7955 from archive.org
         private readonly Image myPCIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -109).ToBitmap();
         private readonly Image controlPanelIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -27).ToBitmap();
         private readonly Image desktopIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -110).ToBitmap();
-        private readonly Image desktopBackground = getBackground();
+        private readonly Image desktopBackground = GetBackground();
 
         public Start()
         {
@@ -49,7 +49,7 @@ if you want to research how they look, get build 7955 from archive.org
             //                                                                                                      X  Y  Width Height
         }
 
-        private void myPC_Paint(object sender, PaintEventArgs e)
+        private void MyPC_Paint(object sender, PaintEventArgs e)
         {
             //                              X -\/  \/- Y
             e.Graphics.DrawImage(myPCIcon, 15, 15); //Change position if you want.
@@ -57,7 +57,7 @@ if you want to research how they look, get build 7955 from archive.org
             //                                                                                                      X  Y  Width Height
         }
 
-        private void controlPanel_Paint(object sender, PaintEventArgs e)
+        private void ControlPanel_Paint(object sender, PaintEventArgs e)
         {
             //                              X -\/  \/- Y
             e.Graphics.DrawImage(controlPanelIcon, 15, 15); //Change position if you want.
@@ -88,7 +88,7 @@ if you want to research how they look, get build 7955 from archive.org
             AboutBox.Show();
         }
 
-        private static Image getBackground()
+        private static Image GetBackground()
         {
             using (var r = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop"))
             {

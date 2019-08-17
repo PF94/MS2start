@@ -55,7 +55,7 @@
             this.controlPanel.Name = "controlPanel";
             this.controlPanel.Size = new System.Drawing.Size(138, 138);
             this.controlPanel.TabIndex = 4;
-            this.controlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.controlPanel_Paint);
+            this.controlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ControlPanel_Paint);
             // 
             // myPC
             // 
@@ -66,7 +66,7 @@
             this.myPC.Name = "myPC";
             this.myPC.Size = new System.Drawing.Size(138, 138);
             this.myPC.TabIndex = 5;
-            this.myPC.Paint += new System.Windows.Forms.PaintEventHandler(this.myPC_Paint);
+            this.myPC.Paint += new System.Windows.Forms.PaintEventHandler(this.MyPC_Paint);
             // 
             // Explorer
             // 
