@@ -39,10 +39,11 @@
             // 
             this.version.AutoSize = true;
             this.version.BackColor = System.Drawing.Color.Transparent;
+            this.version.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.version.ForeColor = System.Drawing.Color.White;
-            this.version.Location = new System.Drawing.Point(3, 9);
+            this.version.Location = new System.Drawing.Point(12, 9);
             this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(148, 13);
+            this.version.Size = new System.Drawing.Size(185, 17);
             this.version.TabIndex = 0;
             this.version.Text = "MS2start - Start Screen (Beta)";
             // 
@@ -82,6 +83,7 @@
             // 
             this.Desktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(96)))), ((int)(((byte)(146)))));
             this.Desktop.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Desktop.ForeColor = System.Drawing.Color.White;
             this.Desktop.Location = new System.Drawing.Point(144, 351);
             this.Desktop.Name = "Desktop";
             this.Desktop.Size = new System.Drawing.Size(426, 138);

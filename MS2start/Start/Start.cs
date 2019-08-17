@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +12,6 @@ using TweakUtility.Helpers;
 //thanks to craftplacer for helping me
 namespace MS2start
 
-
 /*something interesting...
 apparantly...
 these early versions of the start screen do have animation (https://www.youtube.com/watch?v=nnXtIMxbgCI)
@@ -23,7 +23,7 @@ if you want to research how they look, get build 7955 from archive.org
 
 /*(RESOLUTION) = (WHERE THE ICONS ARE PLACED)
  1366 x 768 = 144 x 151
- 
+
  1280 x 1024 = 144 x 207
  */
 
@@ -34,6 +34,7 @@ if you want to research how they look, get build 7955 from archive.org
         private readonly Image myPCIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -109).ToBitmap();
         private readonly Image controlPanelIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -27).ToBitmap();
         private readonly Image desktopIcon = NativeHelpers.ExtractIcon(@"%SystemRoot%\system32\imageres.dll", -110).ToBitmap();
+        private readonly Image desktopBackground = getBackground();
 
         public Start()
         {
@@ -69,6 +70,15 @@ if you want to research how they look, get build 7955 from archive.org
             //                              X -\/  \/- Y
             e.Graphics.DrawImage(desktopIcon, 15, 15); //Change position if you want.
             e.Graphics.DrawString("Desktop", Explorer.Font, new SolidBrush(controlPanel.ForeColor), new RectangleF(14, 84, 0, 0));
+            e.Graphics.DrawImage(desktopBackground, 150, 6, 269, 126);
+            //                                                                                                      X  Y  Width Height
+        }
+
+        private void Wallpaper_Paint(object sender, PaintEventArgs e)
+        {
+            //                              X -\/  \/- Y
+            e.Graphics.DrawImage(desktopIcon, 15, 15); //Change position if you want.
+            e.Graphics.DrawString("Desktop", Explorer.Font, new SolidBrush(controlPanel.ForeColor), new RectangleF(14, 84, 0, 0));
             //                                                                                                      X  Y  Width Height
         }
 
@@ -76,6 +86,14 @@ if you want to research how they look, get build 7955 from archive.org
         {
             About AboutBox = new About();
             AboutBox.Show();
+        }
+
+        private static Image getBackground()
+        {
+            using (var r = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop"))
+            {
+                return Image.FromFile((string)r.GetValue("WallPaper"));
+            }
         }
     }
 }
