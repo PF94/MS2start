@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ControlPanel
+namespace CharmsBar
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace ControlPanel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ControlPanel());
+            Application.Run(new ChramsMain());
         }
     }
 }

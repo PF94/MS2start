@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ControlPanel
+namespace CharmsBar
 {
-    public partial class Form1 : Form
+    public partial class ChramsMain : Form
     {
-        public Form1()
+        public ChramsMain()
         {
             InitializeComponent();
         }
