@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.logoText = new System.Windows.Forms.Label();
-            this.logo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,15 +46,6 @@
             this.logoText.TabIndex = 0;
             this.logoText.Text = "MS Help";
             // 
-            // logo
-            // 
-            this.logo.Image = global::MShelp.Properties.Resources.SplashLogo;
-            this.logo.Location = new System.Drawing.Point(97, 50);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(23, 26);
-            this.logo.TabIndex = 1;
-            this.logo.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -66,6 +57,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Access denied. See %temp%\\mshelp.log for details.";
             // 
+            // logo
+            // 
+            this.logo.Image = global::MShelp.Properties.Resources.SplashLogo;
+            this.logo.Location = new System.Drawing.Point(97, 50);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(23, 26);
+            this.logo.TabIndex = 1;
+            this.logo.TabStop = false;
+            // 
             // MainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -75,10 +75,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.logoText);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Text = "MS Help";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
