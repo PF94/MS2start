@@ -95,5 +95,28 @@ if you want to research how they look, get build 7955 from archive.org
                 return Image.FromFile((string)r.GetValue("WallPaper"));
             }
         }
+
+        private void Explorer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            System.Diagnostics.Process.Start("explorer.exe");
+        }
+
+        private void MyPC_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            System.Diagnostics.Process.Start("::{20d04fe0-3aea-1069-a2d8-08002b30309d}");
+        }
+
+        private void Desktop_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ControlPanel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            System.Diagnostics.Process.Start("::{26EE0668-A00A-44D7-9371-BEB064C98683}");
+        }
     }
 }
