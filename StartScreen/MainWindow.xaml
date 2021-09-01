@@ -18,12 +18,17 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label>Names</Label>
-        <ListBox Grid.Row="1" x:Name="lstNames" />
+        <Label Content="Start"/>
 
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
             <TextBox x:Name="txtName" />
             <Button x:Name="btnAdd" Margin="0,5,0,0" Click="ButtonAddName_Click">Add Name</Button>
         </StackPanel>
+        <Grid HorizontalAlignment="Center" Height="374" VerticalAlignment="Center" Width="370" Grid.Row="1">
+            <Grid HorizontalAlignment="Left" Height="125" Margin="10,10,0,0" VerticalAlignment="Top" Width="125" Background="#FFD62020">
+                <Label x:Name="label" Content="Tile" HorizontalAlignment="Left" Margin="6,92,0,0" VerticalAlignment="Top"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="48" Source="/testicon.png" RenderTransformOrigin="0.929,0.776"/>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
