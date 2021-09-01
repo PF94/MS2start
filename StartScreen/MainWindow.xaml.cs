@@ -25,13 +25,30 @@ namespace StartScreen
             InitializeComponent();
         }
 
+        private void Tile_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Panel_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] pets = { "dog", "cat", "bird" };
+            foreach (string value in pets)
+            {
+                Tile startTile = new Tile();
+                startTile.label.Content = value;
+                panelEpic.Children.Add(startTile);
+            }
+        }
         private void ButtonAddName_Click(object sender, RoutedEventArgs e)
         {
-            //if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text))
-            //{
-            //    lstNames.Items.Add(txtName.Text);
-            //    txtName.Clear();
-            //}
+            if (!string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                Tile startTile = new Tile();
+                startTile.label.Content = txtName.Text;
+                panelEpic.Children.Add(startTile);
+                txtName.Clear();
+            }
         }
     }
 }
