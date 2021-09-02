@@ -1,10 +1,10 @@
-# MS2start (REWRITE IN PROGRESS)
+# MS2start/Unimmersive (REWRITE IN PROGRESS)
 
 I am currently rewriting MS2start to use Windows Presentation Foundation instead of Windows Forms, even though I have no damn idea on what I'm doing.
 
 The original version from August 2019 had a ton of flaws, and it was just easier to restart it from scratch.
 
-![image](https://user-images.githubusercontent.com/45898787/131753534-a24c9eaf-9da3-4605-8f9e-0e3e10cfc952.png)
+![image](https://user-images.githubusercontent.com/45898787/131768369-528f64e6-b8f1-4168-9281-b62a5120f980.png)
 
 ## 2019 Readme
 
