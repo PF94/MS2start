@@ -22,11 +22,11 @@ namespace StartScreen
         public Tile()
         {
             InitializeComponent();
-            Debug.WriteLine("Opened tile");
+            Debug.WriteLine("Spawned tile");
         }
-        private void tile_Click(object sender, MouseButtonEventArgs e)
+        private void Tile_Click(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Hello, Windows Presentation Foundation!");
+            MessageBox.Show("You just clicked tile " + label); //this is a placeholder
         }
     }
 }

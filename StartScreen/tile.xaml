@@ -6,12 +6,55 @@
              xmlns:local="clr-namespace:StartScreen"
              mc:Ignorable="d" 
              d:DesignHeight="145" d:DesignWidth="145">
-    <Grid MouseDown="tile_Click" HorizontalAlignment="Left" Height="125" VerticalAlignment="Top" Width="125" Background="#FFD62020" Margin="12,12,0,0">
+    <Grid MouseDown="Tile_Click" HorizontalAlignment="Left" Height="125" VerticalAlignment="Top" Width="125" Background="#FF20A4D6" Margin="12,12,0,0" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform x:Name="Size" ScaleX="1" ScaleY="1"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label x:Name="label" Content="Tile" HorizontalAlignment="Left" Margin="6,92,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Label x:Name="label" Content="Tile" HorizontalAlignment="Left" Margin="6,65,0,0" VerticalAlignment="Top" Grid.RowSpan="2" FontFamily="Segoe UI"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="48" Source="/testicon.png" RenderTransformOrigin="0.929,0.776" Grid.RowSpan="2"/>
     </Grid>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="MouseEnter">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+              Storyboard.TargetName="Size"
+              Storyboard.TargetProperty="ScaleX"
+              From="1" To="1.05" Duration="00:00:00.05"/>
+                </Storyboard>
+            </BeginStoryboard>
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+              Storyboard.TargetName="Size"
+              Storyboard.TargetProperty="ScaleY"
+              From="1" To="1.05" Duration="00:00:00.05"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="MouseLeave">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+              Storyboard.TargetName="Size"
+              Storyboard.TargetProperty="ScaleX"
+              From="1.05" To="1" Duration="00:00:00.25"/>
+                </Storyboard>
+            </BeginStoryboard>
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+              Storyboard.TargetName="Size"
+              Storyboard.TargetProperty="ScaleY"
+              From="1.05" To="1" Duration="00:00:00.25"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </UserControl.Triggers>
 </UserControl>

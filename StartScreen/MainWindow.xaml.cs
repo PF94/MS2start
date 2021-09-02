@@ -25,14 +25,10 @@ namespace StartScreen
             InitializeComponent();
         }
 
-        private void Tile_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+        //loads a tile from a list
         private void Panel_Loaded(object sender, RoutedEventArgs e)
         {
-            string[] pets = { "dog", "cat", "bird" };
+            string[] pets = { "dog", "cat", "bird" }; //placeholder until i make proper settings
             foreach (string value in pets)
             {
                 Tile startTile = new Tile();
@@ -40,6 +36,8 @@ namespace StartScreen
                 panelEpic.Children.Add(startTile);
             }
         }
+
+        //creates a custom tile intended to test tiles.
         private void ButtonAddName_Click(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtName.Text))
