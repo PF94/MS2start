@@ -1,4 +1,6 @@
-# MS2start/Unimmersive (REWRITE IN PROGRESS)
+# Unimmersive 2019 and 2021 prototypes.
+
+**Note: This is the old repository. A new repository with the 2022 codebase is available at https://github.com/PF94/Unimmersive/tree/main.**
 
 I am currently rewriting MS2start to use Windows Presentation Foundation instead of Windows Forms, even though I have no damn idea on what I'm doing.
 
